@@ -1,0 +1,47 @@
+.imcontainer {
+    position: relative;
+    width: 100%;
+    
+  }
+  
+  .imcontainer img {
+    width: 100%;
+    height: 400px;
+  }
+  
+  .imcontainer .btn1 {
+    position: absolute;
+    top: 50%;
+    right: 95%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .imcontainer .btn2 {
+    position: absolute;
+    top: 50%;
+    left: 99%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .imcontainer .btn:hover {
+    background-color: black;
+  }
+  
+ 
