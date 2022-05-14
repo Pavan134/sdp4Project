@@ -3,7 +3,10 @@ import axios from 'axios'
 import Slider from './Slider'
 import HomeComponents from './HomeComponents'
 function UserHome() {
+  
     const id=localStorage.getItem("id")
+    if(!id)
+    window.location.href ="http://localhost:3000/login"
     const [user, setUser] = useState({})
     const className='button1'
     useEffect(()=>{
@@ -19,7 +22,7 @@ function UserHome() {
         })
     },[])
     const logout=()=>{
-
+      localStorage.removeItem("id")
       window.location.href ="http://localhost:3000/login"
     }
     const addproduct=()=>{

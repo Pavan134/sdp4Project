@@ -3,6 +3,9 @@ import React ,{useState,useEffect}from 'react'
 import Product from './Product'
 import { Header } from './Header'
 function ProductList() {
+    const id=localStorage.getItem("id")
+    if(!id)
+    window.location.href ="http://localhost:3000/login"
     const [products, setproduct] = useState([])
     const [value, setvalue] = useState('')
     useEffect(()=>{
@@ -29,8 +32,8 @@ function ProductList() {
     }
   return (
     <div>
-        <button style={{marginBottom:"20px",marginRight:"30px",float:"right"}} className="btn btn-primary">Home</button><br></br>
-        {values}
+        
+       
        {productlist1}
        
     </div>
