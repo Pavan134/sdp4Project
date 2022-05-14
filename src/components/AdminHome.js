@@ -4,6 +4,7 @@ import axios from 'axios'
 import AddProduct from './addProduct'
 import Product from './Product'
 import ProductList from './ProductList'
+import { Header } from './Header'
 
 function AdminHome() {
     const id=localStorage.getItem("id")
@@ -25,7 +26,7 @@ function AdminHome() {
 
   return (
 <div>
-      
+    <Header></Header>
     <AddProduct></AddProduct>
     <a href='/' style={{margin:"5px"}}>Home</a>
     <a href='/products'>products</a>

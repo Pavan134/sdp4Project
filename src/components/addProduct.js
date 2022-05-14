@@ -49,11 +49,11 @@ function AddProduct() {
     
   return (
     <div>
-        Product Name:<input type="text" value={name} onChange={e=>setname(e.target.value)}></input><br></br>
+        <p></p>Product Name:<input type="text" value={name} onChange={e=>setname(e.target.value)}></input><br></br>
         Product use:<input type="text" value={use} onChange={e=>setuse(e.target.value)}></input><br></br>
         Product price:<input type="text" value={price} onChange={e=>setprice(e.target.value)}></input><br></br>
         Product image:<input type="file"  name="file" onChange={e=>setimageUrl(e.target.files[0])} ></input><br></br>
-        {/* Product pdf:<input type="file" name="pdf" onChange={e=>setpdfurl(e.target.files[1])} ></input><br></br> */}
+        Product pdf:<input type="file" name="pdf"  ></input><br></br>
         <button onClick={()=>submit(imageUrl)}>submit</button>
     </div>
   )

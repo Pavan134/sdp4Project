@@ -17,13 +17,20 @@ function ProductList() {
             setproduct({})
         })
     },[])
-    const search=products
+    
     const productlist=products.map((search)=><h2>{search.name}</h2>)
     const productlist1=products.map((product)=><Product key={product.id} product={product}></Product>)
+    let values=[];
+    const searchValue=(e)=>{
+        setvalue(...value,e.target.value)
+        const search=products
+       
+    console.log(value) 
+    }
   return (
     <div>
-        <input type="text" ></input>
-       {productlist}
+        <button style={{marginBottom:"20px",marginRight:"30px",float:"right"}} className="btn btn-primary">Home</button><br></br>
+        {values}
        {productlist1}
        
     </div>

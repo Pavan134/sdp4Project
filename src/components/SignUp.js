@@ -52,7 +52,7 @@ function SignUp() {
        <input type="submit"  onClick={submit} value="sign up" className='submit'></input><br/>
        <a href="">forgot password</a><br/>
         <br/>
-        <a href='/signup' className='link'>login</a><p style={{float:'right'}}>You have already Account?</p>
+        <a href='/login' className='link'>login</a><p style={{float:'right'}}>You have already Account?</p>
        </div>
     </div>
   )
