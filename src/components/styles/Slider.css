@@ -4,9 +4,9 @@
     
   }
   
-  .imcontainer img {
+  .imcontainer .img {
     width: 100%;
-    height: 400px;
+    height: 550px;
   }
   
   .imcontainer .btn1 {

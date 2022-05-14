@@ -1,8 +1,8 @@
 import React,{useState,useEffect} from 'react'
 import "./styles/Slider.css"
-import image1 from './images/image1.jpg';
-import image2 from './images/image2.jpg';
-import image3 from './images/image3.jpg';
+import image1 from './images/slide2.jpg';
+import image2 from './images/slide3.jpg';
+import image3 from './images/slide4.png';
 function Slider() {
     const [count, setcount] = useState(0)
     const [image, setimage] = useState(image1)
@@ -44,7 +44,7 @@ function Slider() {
     },[count])
   return (
     <div className='imcontainer'>
-        <img src={image} alt="Snow" />
+        <img src={image} alt="Snow" className='img'/>
         <button className='btn1' onClick={sub}>{"<"}</button>
         <button className='btn2' onClick={add}>{">"}</button>
         

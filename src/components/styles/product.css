@@ -1,0 +1,31 @@
+.cardproduct{
+    height:580px;
+    width:300px;
+    float: left;
+    border-radius: 5px;
+    max-height: 700px;
+    background-color: whitesmoke;
+    margin: 30px;
+    box-shadow: 5px 5px #888888;
+}
+.classproduct{
+    margin: 20px;
+    height: 290px;
+    width: 250px;
+}
+.cardproduct:hover{
+    box-shadow: 5px 10px #888888;
+}
+.cardproduct .font{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 15px;
+    font-size: 20px;
+
+}
+.price{
+    font-size: 20px;
+    background-color: yellow;
+    padding: 5px;
+    margin-top: 20px;
+    text-align: center; 
+}
